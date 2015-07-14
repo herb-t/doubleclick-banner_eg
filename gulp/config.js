@@ -18,6 +18,12 @@ var config = {
 
 	production : production,
 
+	zip: {
+        dist: dest,
+        src: dest + '/**/*',
+        name: 'dist.zip'
+    },
+
 	clean: {
 		src: ['./.tmp', './dist']
 	},
