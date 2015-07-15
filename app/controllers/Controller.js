@@ -60,8 +60,8 @@ AnimationController.prototype.firstAnimation = function() {
 	tl.to (this.envelopeContainer, 0.75, { autoAlpha: 0, ease: Power4.easeOut });
 	tl.to (this.endFrame, 0.75, { autoAlpha: 1, top: '50%', ease: Power2.easeOut }, 6.25);
 	tl.to (this.endFrameH1, 0.75, { top: 0, ease: Power2.easeOut }, 6.30);
-	tl.to (this.endFrameP, 0.75, { top: 0, ease: Power2.easeOut }, 6.35);
-	tl.to (this.endFrameCta, 0.75, { top: 0, ease: Power2.easeOut }, 6.40);
+	tl.to (this.endFrameP, 0.75, { top: -12, ease: Power2.easeOut }, 6.35);
+	tl.to (this.endFrameCta, 0.75, { top: -6, ease: Power2.easeOut }, 6.40);
 
     return tl;
 
