@@ -26,27 +26,28 @@ gulp.task('imagemin', ['static'], function () {
 
 });
 
-gulp.task('manifest', function(done) {
+// gulp.task('manifest', function(done) {
 
-	recursive('./static/images', function (err, files) {
-	  if (err) throw err;
+// 	recursive('./static/images', function (err, files) {
+// 	  if (err) throw err;
 
-	  files.forEach( function(file) {
-	  	var object = {src: file.replace(/^static/g, '..').replace(/\\/g, '/') };
-	  	images.push(object);
-	  });
+// 	  files.forEach( function(file) {
+// 	  	var object = {src: file.replace(/^static/g, '..').replace(/\\/g, '/') };
+// 	  	images.push(object);
+// 	  });
 
-	  var jsonObject = JSON.stringify(images);
+// 	  var jsonObject = JSON.stringify(images);
 
-	  fs.writeFile('./static/manifest.json', jsonObject, function(err) {
-	  	if (err) throw err;
-	  	done();
-	  });
+// 	  fs.writeFile('./static/manifest.json', jsonObject, function(err) {
+// 	  	if (err) throw err;
+// 	  	done();
+// 	  });
 
-	});
+// 	});
 
-});
+// });
 
-gulp.task('images', ['imagemin', 'manifest'], function() {
+// gulp.task('images', ['imagemin', 'manifest'], function() {
+gulp.task('images', ['imagemin'], function() {
 
 });
