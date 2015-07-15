@@ -11,14 +11,16 @@ var createjs = require('createjs');
 var Ad = function() {
 
     // selectors
-    this.catchAll = document.querySelector('#catchAll'); 
+    this.catchAll = document.querySelector('#catch-all');
+    this.cta = document.querySelector('#cta'); 
 
     // variables
     this.count = 0;
     this.init();
 
-    // event listeners
-    // this.catchAll.addEventListener('click', this.catchAllHandler, false);
+    //event listeners
+    this.catchAll.addEventListener('click', this.catchAllHandler, false);
+    this.cta.addEventListener('click', this.ctaHandler, false);
 
 };
 
@@ -28,6 +30,15 @@ Ad.prototype.catchAllHandler = function(e){
     e.preventDefault();
     console.log('%c:: background exit clicked ::', colors.yellow);
     Enabler.exit('Background Exit', 'http://www.google.com');
+
+};
+
+// end frame cta
+Ad.prototype.ctaHandler = function(e){
+
+    e.preventDefault();
+    console.log('%c:: cta exit clicked ::', colors.yellow);
+    Enabler.exit('CTA Exit', 'http://www.google.com');
 
 };
 

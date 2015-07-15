@@ -40,49 +40,113 @@ body, html
   position relative
   //display none
   cursor pointer
-  //-webkit-box-shadow: 0px 0px 1px 1px #000, 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
-  //box-shadow: 0px 0px 1px 1px #000, 0px 0px 3px 3px rgba(0, 0, 0, 0.75);
+  
+#catch-all
+  width 100%
+  height 100%  
+
+.envelope-back
+  z-index 1 
+
+.envelope-front
+  top 55% !important
+  z-index 5
 
 .envelope-container
-  visibility visible
+  visibility visible  
   
-
-figure img
-  position absolute
-  top 50%
-  left 50%
-  -webkit-transform translate(-50%, -50%)
-  -moz-transform translate(-50%, -50%)
-  -ms-transform translate(-50%, -50%)
-  -o-transform translate(-50%, -50%)
-  transform translate(-50%, -50%)
-  z-index 1
-
-//figure
-//  border 1px solid black
-
-figcaption
-  margin 0
-  color $grey
-  background $white
-  width 100%
-  text-align center
+  img
+    position absolute
+    top 50%
+    left 50%
+    -webkit-transform translate(-50%, -50%)
+    -moz-transform translate(-50%, -50%)
+    -ms-transform translate(-50%, -50%)
+    -o-transform translate(-50%, -50%)
+    transform translate(-50%, -50%)
+    
+  .mail-container
+    position absolute
+    overflow hidden
+    top 50%
+    left 50%
+    z-index 3
+    width 100%
+    height 30%  
+    -webkit-transform translate(-50%, -50%)
+    -moz-transform translate(-50%, -50%)
+    -ms-transform translate(-50%, -50%)
+    -o-transform translate(-50%, -50%)
+    transform translate(-50%, -50%)
+    
+    .mail-wine, .mail-baking, .mail-tea,
+    .mail-icecream, .mail-metal, .mail-sneakers
+      z-index 4
+      top 100%
+      
+span
   position absolute
   top 75%
   left 50%
+  z-index 3
   -webkit-transform translate(-50%, -50%)
   -moz-transform translate(-50%, -50%)
   -ms-transform translate(-50%, -50%)
   -o-transform translate(-50%, -50%)
   transform translate(-50%, -50%)
-  text-decoration: none
+  visibility hidden
+  color $grey
+  font-family 'Roboto', sans-serif
+  font-weight 300
+  
+// .wine, .baking, .tea, .icecream, .metal, .sneakers
+//   visibility hidden
+
+// -------------------------------------
+//   End Frame
+// -------------------------------------
+.end-frame
+  visibility hidden
+  width 180px
+  position absolute
+  text-align center
+  top 60%
+  left 50%
+  -webkit-transform translate(-50%, -50%)
+  -moz-transform translate(-50%, -50%)
+  -ms-transform translate(-50%, -50%)
+  -o-transform translate(-50%, -50%)
+  transform translate(-50%, -50%)
+
+
+  h1
+    font-size 21px
+    color $grey
+    font-family 'Roboto', sans-serif
+    font-weight 400
+    position relative
+    top 20px
+
+  p
+    font-size 12px
+    color $grey
+    font-family 'Roboto', sans-serif
+    margin-bottom 20px
+    position relative
+    top 20px
 
   a
     text-decoration none
-    color $grey
-    display block
-    font-family 'Roboto', sans-serif
-    font-weight 300
+    color $white
+    background $blue
+    padding 10px 30px
+    font-size 12px
+    border-radius 3px
+    position relative
+    top 20px
+    
+    &:hover
+      background darken($blue, 10%)
 
 
 
