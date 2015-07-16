@@ -45,12 +45,7 @@ body, html
   width 100%
   height 100%  
 
-.envelope-back
-  z-index 1 
 
-.envelope-front
-  top 51% !important
-  z-index 5
 
 .envelope-container
   visibility visible  
@@ -84,6 +79,41 @@ body, html
     .mail-icecream, .mail-metal, .mail-sneakers
       z-index 4
       top 100%
+      
+  .envelope-back
+    z-index 1
+    
+  #envelope-bg
+    visibility hidden
+    opacity 0 
+    
+  #envelope-closed
+    visibility visible
+    opacity 1
+    
+    
+  .envelope-tab
+    z-index 6
+    top 35.95% !important
+    -webkit-perspective 1000px 
+    -moz-perspective 1000px 
+    perspective 1000px  
+    -webkit-perspective-origin 0 50% 
+    -moz-perspective-origin 0 50% 
+    perspective-origin 0 50%
+    -webkit-transform-origin 0 100% 
+    -moz-transform-origin 0 100% 
+    -ms-transform-origin 0 100% 
+    -o-transform-origin 0 100% 
+    transform-origin 0 100%
+    -webkit-transform translate(-50%, -50%) rotateX(180deg)
+    -moz-transform translate(-50%, -50%) rotateX(180deg)
+    -ms-transform translate(-50%, -50%) rotateX(180deg)
+    -o-transform translate(-50%, -50%) rotateX(180deg)
+    transform translate(-50%, -50%) rotateX(180deg)
+
+  .envelope-front
+    z-index 5
       
 span
   position absolute
