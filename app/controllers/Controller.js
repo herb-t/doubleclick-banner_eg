@@ -37,11 +37,10 @@ AnimationController.prototype.firstAnimation = function() {
 
 	var tl = new TimelineMax();
 
-	
 	tl.to (this.envelopeTab, 0.75, {rotationX: 0, autoAlpha: 0, ease: Quad.easeInOut });
 	tl.to (this.envelopeClosed, 0.75, {autoAlpha: 0, ease: Power2.easeOut }, 0.25);
 	tl.to (this.envelopeBg, 0.75, {autoAlpha: 1, ease: Power2.easeOut }, 0.45);
-	tl.to (this.wine, 0.75, {autoAlpha: 1, top: '37%', ease: Back.easeOut });
+	tl.to (this.wine, 1.5, {autoAlpha: 1, top: '37%', ease: Back.easeOut });
 	tl.to (this.wineP, 0.75, { top: '67%', autoAlpha: 1, ease:Power4.easeOut}, 1.25);
 	tl.to (this.wine, 0.75, { autoAlpha: 0,  top: '100%', ease: Power2.easeOut },1.75);
 	tl.to (this.wineP, 0.75, { top: '72%', autoAlpha: 0, display: 'none', ease:Power4.easeOut}, 1.8);

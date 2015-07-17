@@ -11,9 +11,10 @@ var config = {
 
 	manifest: [
 
-		{'src':'images/envelope-front.png'},
-		{'src':'images/envelope-tab.png'},
-		{'src':'images/envelope.png'},
+		{'src':'images/envelope-front-final.png'},
+		{'src':'images/envelope-tab-wht.png'},
+		{'src':'images/envelope-final.png'},
+		{'src':'images/envelope-closed.png'},
 		{'src':'images/gmail-logo.png'},
 		{'src':'images/mail-baking.png'},
 		{'src':'images/mail-icecream.png'},
